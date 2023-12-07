@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-# Author - ENEJO SUNDAY OCHE
-
-i = 0
-for c in range(ord('z'), ord('a') - 1, -1):
-    print("{}".format(chr(c - i)), end="")
-    i = 32 if i == 0 else 0
+i = 122
+while i >= 97:
+    if i % 2 != 0:
+        i = i - 32
+    print("{}".format(chr(i)), end='')
+    if i % 2 != 0:
+        i = i + 32
+    i -= 1
