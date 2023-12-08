@@ -8,12 +8,12 @@ no_args = j - 1
 if no_args == 0:
     print("{} arguments.".format(no_args))
 elif no_args == 1:
-    print("1 arguments:")
+    print("1 argument:")
 
 else:
     print("{} arguments:".format(no_args))
 
 i = 1
 while i <= no_args:
-    print("{} : {}".format(i, sys.argv[i]))
+    print("{}: {}".format(i, sys.argv[i]))
     i += 1
