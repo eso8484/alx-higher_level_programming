@@ -4,16 +4,16 @@ if __name__ == "__main__":
 import sys
 
 j = len(sys.argv)
-no_args = j
-if no_args == 2:
-    print("{} argument:".format(no_args - 1))
+no_args = j - 1
+if no_args == 0:
+    print("{} arguments.".format(no_args))
 elif no_args == 1:
-    print("0 arguments.")
+    print("1 arguments:")
 
 else:
-    print("{} arguments:".format(no_args - 1))
+    print("{} arguments:".format(no_args))
 
 i = 1
-while i < no_args:
+while i <= no_args:
     print("{} : {}".format(i, sys.argv[i]))
     i += 1
